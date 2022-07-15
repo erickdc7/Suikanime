@@ -585,7 +585,10 @@ button {
     width: 250px;
 }
 
-
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+    background-color: hsl(209, 16%, 90%);
+}
 
 
 
