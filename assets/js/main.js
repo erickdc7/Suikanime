@@ -78,6 +78,64 @@ function scrollActive() {
 }
 window.addEventListener('scroll', scrollActive)
 
+
+
+
+/*=============== JIKAN API ===============*/
+const urlAnimeon = 'https://api.jikan.moe/v4/seasons/now'
+const urlAnimetop = 'https://api.jikan.moe/v4/top/anime'
+
+fetch(urlAnimeon)
+    .then(response => response.json())
+    .then(response => {
+
+        const content = document.getElementById('animeon')
+        for (let i = 0; i < 25; i++) {
+            content.innerHTML += `  
+                <div class="anime__img">
+                    <div class="image__emision">
+                        <img loading="lazy" src="${response.data[i].images.jpg.large_image_url}" alt="${response.data[i].title} Poster">
+                    </div>
+
+                    <div class="anime__img-info">
+                        <h3>${response.data[i].title}</h3>
+                        <p>${response.data[i].source}</p>
+                    </div>
+                </div>
+            `
+        }
+    })
+    .catch(err => console.error(err))
+
+fetch(urlAnimetop)
+    .then(response => response.json())
+    .then(response => {
+        const content = document.getElementById('animetop')
+        for (let i = 0; i < 10; i++) {
+            content.innerHTML += `  
+                <div class="anime__top swiper-slide">
+                    <div class="anime__top-img">
+                        <img loading="lazy" src="${response.data[i].images.jpg.large_image_url}"
+                            alt="${response.data[i].title} Poster" class="popular__img">
+                    </div>
+                    <div class="popular__anime-title">
+                        <h2>${response.data[i].title}</h2>
+                        <p>#${response.data[i].rank}</p>
+                    </div>
+                    <div class="popular__anime-subtitle">
+                        <h3>${response.data[i].status}</h3>
+                        <p>∙</p>
+                        <p>${response.data[i].episodes} ep.</p>
+                    </div>
+                    <p class="popular-anime-description">
+                        ${response.data[i].synopsis}
+                    </p>
+                </div>
+            `
+        }
+    })
+    .catch(err => console.error(err))
+
 /*=============== TEXT ANIMATION ===============
 let elements = document.querySelectorAll('.anime__img-info');
 

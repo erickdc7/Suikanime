@@ -298,6 +298,26 @@ button {
     font-size: var(--small-font-size);
 }
 
+/* clears the 'X' from Internet Explorer */
+input[type=search]::-ms-clear {
+    display: none;
+    width: 0;
+    height: 0;
+}
+
+input[type=search]::-ms-reveal {
+    display: none;
+    width: 0;
+    height: 0;
+}
+
+/* clears the 'X' from Chrome */
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+    display: none;
+}
 
 
 
@@ -418,7 +438,7 @@ button {
     font-weight: var(--font-medium);
     font-size: var(--smaller-font-size);
     text-transform: uppercase;
-    width: calc(100% - 3rem);
+    width: calc(100% - 4.5rem);
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;
