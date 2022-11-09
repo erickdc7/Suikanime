@@ -96,7 +96,6 @@ fetch(urlAnimeon)
                     <div class="image__emision">
                         <img loading="lazy" src="${response.data[i].images.jpg.large_image_url}" alt="${response.data[i].title} Poster">
                     </div>
-
                     <div class="anime__img-info">
                         <h3>${response.data[i].title}</h3>
                         <p>${response.data[i].source}</p>
