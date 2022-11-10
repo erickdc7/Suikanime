@@ -88,7 +88,6 @@ const urlAnimetop = 'https://api.jikan.moe/v4/top/anime'
 fetch(urlAnimeon)
     .then(response => response.json())
     .then(response => {
-
         const content = document.getElementById('animeon')
         for (let i = 0; i < 25; i++) {
             content.innerHTML += `  
