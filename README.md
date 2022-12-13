@@ -1,2 +1,2 @@
 # Suikanime
-Página anime inspirada y con datos de JKanime, AnimeFLV, SomosKudasai y MyAnimeList.
+Anime page inspired and with data from JKanime, AnimeFLV, SomosKudasai and MyAnimeList.
