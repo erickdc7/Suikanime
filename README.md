@@ -1,4 +1,4 @@
-# Rick and Morty API - Data
+# Suikanime
 On this website you will find the anime that are currently on the air, the most popular anime and news related to anime and manga.
 
 ## Technologies
