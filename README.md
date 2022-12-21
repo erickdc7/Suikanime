@@ -1,5 +1,5 @@
 # Suikanime
-On this website you will find the anime that are currently on the air, the most popular anime and news related to anime and manga. All information comes from [MyAnimeList](https://myanimelist.net/ "The world's most active online anime and manga community and database.") and [AnmoSugoi](https://www.anmosugoi.com/ "The latest anime and manga news.").
+On this static website you will find the anime that are currently on the air, the most popular anime and news related to anime and manga. All information comes from [MyAnimeList](https://myanimelist.net/ "The world's most active online anime and manga community and database.") and [AnmoSugoi](https://www.anmosugoi.com/ "The latest anime and manga news.").
 
 ## Technologies
 This web page was made with the following technologies:
