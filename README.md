@@ -7,7 +7,7 @@ This web page was made with the following technologies:
 - CSS3
 - JavaScript
 
-## Pages
+## Sections
 This web page contains 3 sections: **Seasonal**, **Popular** and **News**.
 
 ### Seasonal
